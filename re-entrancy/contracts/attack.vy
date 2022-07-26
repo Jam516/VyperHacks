@@ -24,7 +24,7 @@ victim: public(address)
 # @notice Set the victim address in the constructor
 @external
 def __init__():
-    self.victim = 0xE79ec29a88B4Ca161280EA4D2d6f014a7A4C78F6
+    self.victim = 0xf2ABc3665492291f3D264BDD5f2d791274A011a9
 
 # @notice Default is called when EtherStore sends ETH to this contract.
 @external
