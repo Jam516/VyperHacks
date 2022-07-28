@@ -29,7 +29,7 @@ def withdraw():
     bal: uint256 = self.balances[msg.sender]
     assert bal > 0, "This account does not have a balance"
 
-    send(msg.sender, bal)
+    raw_call(msg.sender, b'', value=bal)
 
     self.balances[msg.sender] = 0
 
