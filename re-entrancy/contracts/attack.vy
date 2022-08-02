@@ -21,10 +21,10 @@ interface IEtherstore:
 # @notice The address where the Etherstore contract is deployed
 victim: public(address)
 
-# @notice Set the victim address in the constructor
+# @notice Set the victim address
 @external
-def __init__():
-    self.victim = 0x1A5FE45Fe6844A6868d7C21C3F6B9370A34D151e
+def setVictim(_victim:address):
+    self.victim = _victim
 
 # @notice Default is called when EtherStore sends ETH to this contract.
 @external
